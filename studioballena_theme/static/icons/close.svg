@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="25px" viewBox="0 0 24 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group</title>
+    <g id="DESKTOP" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home-Lightbox-01" transform="translate(-1816.000000, -79.000000)" fill="#000000">
+            <g id="Group" transform="translate(1816.000000, 80.000000)">
+                <polygon id="Rectangle" transform="translate(12.000000, 11.873553) rotate(45.000000) translate(-12.000000, -11.873553) " points="-4.37582678 11.4576399 28.3811515 11.2841421 28.3758268 12.2894669 -4.38115149 12.4629646"></polygon>
+                <polygon id="Rectangle" transform="translate(12.000000, 11.873553) rotate(-45.000000) translate(-12.000000, -11.873553) " points="-4.38115149 11.2841421 28.3758268 11.4576399 28.3811515 12.4629646 -4.37582678 12.2894669"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>
