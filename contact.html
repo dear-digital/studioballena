@@ -1,0 +1,70 @@
+---
+layout: default
+---
+
+<div class="contact-page-wrapper container">
+  <div class="contact-page flex-box justify-between">
+    <div class="company-address">
+      <div class="compnay-name extra-light">
+        Studio Ballena
+      </div>
+      <div class="address light">
+      Regentiestraat 145 <br>
+      B-9473 Welle (Aalst)<br>
+      info@studioballena.com<br>
+      +32 476 820 476<br>
+      <span class="btw">BTW BE0877.832.974</span>
+      </div>
+    </div>
+    <div class="contact-us-form">
+      <form class="contact-us" action="index.html" method="post">
+        <div class="input-wrapper">
+          <label for="first-name">voornaam</label>
+          <input class="contact-input" type="text" name="first-name" value="" placeholder="Jouw voornaam" required />
+        </div>
+        <div class="input-wrapper">
+          <label for="last-name">familienaam</label>
+          <input class="contact-input" type="text" name="last-name" value="" placeholder="Jouw familienaam" required />
+        </div>
+        <div class="input-wrapper">
+          <label for="email">mailadres</label>
+          <input class="contact-input" type="email" name="email" value="" placeholder="Jouw e-mailadres" required />
+        </div>
+        <div class="input-wrapper">
+          <label for="message">bericht</label>
+          <textarea class="contact-input" name="message" rows="5" cols="80" placeholder="Je bericht"></textarea>
+        </div>
+        <div class="input-wrapper no-disp">
+          <label for="newslatter">inschrijven op de nieuwsbrief</label>
+          <input id="myCheckBox" class="contact-input" type="checkbox" name="newslatter" value="" placeholder="Jouw e-mailadres" required />
+        </div>
+        <div class="checkbox-wrapper flex-box align-center">
+          <div class="checkbox">
+            <span class="checked"></span>
+          </div>
+          <div class="checkbox-label">
+            inschrijven op de nieuwsbrief
+          </div>
+        </div>
+        <div class="input-wrapper">
+          <input type="submit" name="Submit" value="verstuur formulier" class="submit-btn medium" />
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<script>
+  $('.checkbox-wrapper').click(function() {
+    console.log('clicked');
+    if($("#myCheckBox").is(":checked")){
+      $("#myCheckBox").prop("checked", false);
+      $(this).removeClass('selected');
+    }
+    else {
+      $("#myCheckBox").prop("checked", true);
+      $(this).addClass('selected');
+    }
+  });
+</script>
