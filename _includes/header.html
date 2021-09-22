@@ -3,6 +3,7 @@
     <div class="header flex-box justify-between align-center">
       <div class="header-left">
         <div class="main-logo">
+          <a href="{{ '/' | relative_url }}">
           <?xml version="1.0" encoding="UTF-8"?>
           <svg width="175px" height="64px" viewBox="0 0 175 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <title>Logo</title>
@@ -50,15 +51,16 @@
                   </g>
               </g>
           </svg>
+          </a>
         </div>
       </div>
       <div class="header-right flex-box justify-between">
         <div class="header-right-upper flex-box justify-between align-center">
-          <a href="/over" class="header-upper-link">Over</a>
-          <a href="/diensten" class="header-upper-link">Diensten</a>
-          <a href="/klanten" class="header-upper-link">Klanten</a>
-          <a href="/blog" class="header-upper-link">Blog</a>
-          <a href="#" class="header-upper-link flex-box align-center">
+          <a href="{{ '/over' | relative_url }}" class="header-upper-link">Over</a>
+          <a href="{{ '/diensten' | relative_url }}" class="header-upper-link">Diensten</a>
+          <a href="{{ '/klanten' | relative_url }}" class="header-upper-link">Klanten</a>
+          <a href="{{ '/blog' | relative_url }}" class="header-upper-link">Blog</a>
+          <a href="{{ '#' | relative_url }}" class="header-upper-link flex-box align-center">
             <span class="lang-svg">
               <?xml version="1.0" encoding="UTF-8"?>
               <svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -78,13 +80,13 @@
           </a>
         </div>
         <div class="header-right-lower flex-box justify-between align-center">
-          <a href="/" class="header-lower-link">home</a>
-          <a href="/product" class="header-lower-link">product</a>
-          <a href="/food" class="header-lower-link">food</a>
-          <a href="/architectural" class="header-lower-link">architectural</a>
-          <a href="/industrial" class="header-lower-link">industrial</a>
-          <a href="/drone" class="header-lower-link">drone</a>
-          <a href="/contact" class="header-lower-link contact-link medium btn red-btn">contact</a>
+          <a href="{{ '/' | relative_url }}" class="header-lower-link">home</a>
+          <a href="{{ '/product' | relative_url }}" class="header-lower-link">product</a>
+          <a href="{{ '/food' | relative_url }}" class="header-lower-link">food</a>
+          <a href="{{ '/architectural' | relative_url }}" class="header-lower-link">architectural</a>
+          <a href="{{ '/industrial' | relative_url }}" class="header-lower-link">industrial</a>
+          <a href="{{ '/drone' | relative_url }}" class="header-lower-link">drone</a>
+          <a href="{{ '/contact' | relative_url }}" class="header-lower-link contact-link medium btn red-btn">contact</a>
         </div>
       </div>
     </div>

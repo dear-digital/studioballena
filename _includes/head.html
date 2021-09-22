@@ -38,11 +38,11 @@
 
     <link rel="canonical" href="{{ url }}">
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url }}" />
-    <link rel="stylesheet" href="/studioballena_theme/static/lib/css/styles.css">
-    <link rel="stylesheet" href="/studioballena_theme/static/lib/css/lightbox.css">
-    <link rel="stylesheet" href="/studioballena_theme/static/lib/css/slick.css">
+    <link rel="stylesheet" href="{{ '/studioballena_theme/static/lib/css/styles.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/studioballena_theme/static/lib/css/lightbox.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/studioballena_theme/static/lib/css/slick.css' | relative_url }}">
 
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
-    <script src="/studioballena_theme/static/lib/js/script.js" type="text/javascript"></script>
-    <script src="/studioballena_theme/static/lib/js/lightbox.js" type="text/javascript"></script>
+    <script src="{{ '/studioballena_theme/static/lib/js/script.js' | relative_url }}" type="text/javascript"></script>
+    <script src="{{ '/studioballena_theme/static/lib/js/lightbox.js' | relative_url }}" type="text/javascript"></script>
 </head>

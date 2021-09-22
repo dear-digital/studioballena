@@ -15,7 +15,7 @@ layout: default
       </div>
     </div>
     <div class="img-wrapper">
-      <img src="/studioballena_theme/static/imgs/20170411 Elise 218.jpg" alt="food-img" />
+      <img src="{{ '/studioballena_theme/static/imgs/20170411 Elise 218.jpg' | relative_url }}" alt="food-img" />
     </div>
   </section>
 
@@ -31,7 +31,7 @@ layout: default
       </div>
     </div>
     <div class="img-wrapper">
-      <img src="/studioballena_theme/static/imgs/20170411 Elise 218.jpg" alt="food-img" />
+      <img src="{{ '/studioballena_theme/static/imgs/20170411 Elise 218.jpg' | relative_url }}" alt="food-img" />
     </div>
   </section>
 
@@ -40,7 +40,7 @@ layout: default
     <div class="team-members flex-box justify-around">
       <div class="team-member flex-box align-center">
         <div class="team-member-img">
-          <img src="/studioballena_theme/static/imgs/MathiasEllegiers-STASHED-ONO.jpg" alt="team-member" />
+          <img src="{{ '/studioballena_theme/static/imgs/MathiasEllegiers-STASHED-ONO.jpg' | relative_url }}" alt="team-member" />
         </div>
         <div class="team-member-name medium">
           Bert balcaen
@@ -52,7 +52,7 @@ layout: default
 
       <div class="team-member flex-box align-center">
         <div class="team-member-img">
-          <img src="/studioballena_theme/static/imgs/MathiasEllegiers-STASHED-ONO.jpg" alt="team-member" />
+          <img src="{{ '/studioballena_theme/static/imgs/MathiasEllegiers-STASHED-ONO.jpg' | relative_url }}" alt="team-member" />
         </div>
         <div class="team-member-name medium">
           Caroline Temmerman
@@ -64,7 +64,7 @@ layout: default
 
       <div class="team-member flex-box align-center">
         <div class="team-member-img">
-          <img src="/studioballena_theme/static/imgs/MathiasEllegiers-STASHED-ONO.jpg" alt="team-member" />
+          <img src="{{ '/studioballena_theme/static/imgs/MathiasEllegiers-STASHED-ONO.jpg' | relative_url }}" alt="team-member" />
         </div>
         <div class="team-member-name medium">
           Bert balcaen
@@ -86,13 +86,13 @@ layout: default
       </div>
     </div>
     <div class="customer-relationship-img">
-      <img src="/studioballena_theme/static/imgs/MathiasEllegiers-STASHED-ONO.jpg" alt="customer relationship" />
+      <img src="{{ '' | relative_url }}/studioballena_theme/static/imgs/MathiasEllegiers-STASHED-ONO.jpg" alt="customer relationship" />
     </div>
   </div>
 
   {% include more-projects.html %}
   <section class="food-photography-contact">
     <h2 class="food-photography-title text-center extra-light">Op zoek naar een fotograaf voor uw project?</h2>
-    <a href="/contact" class="btn home-contact-us-btn center-it">contacteer ons</a>
+    <a href="{{ '/contact' | relative_url }}" class="btn home-contact-us-btn center-it">contacteer ons</a>
   </section>
 </div>
