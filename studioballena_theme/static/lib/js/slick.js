@@ -19,6 +19,22 @@ $(document).ready(function(){
     ]
   });
 
+  $('.project-types.no-d').slick({
+    infinite: false,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    dots: false,
+    arrows: false
+  });
+
+  $('.blog-filters.no-d').slick({
+    infinite: false,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    dots: false,
+    arrows: false
+  });
+
 
 
 
