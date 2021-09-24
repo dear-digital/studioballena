@@ -111,7 +111,7 @@
     // on the page below.
     //
     // Github issue: https://github.com/lokesh/lightbox2/issues/663
-    $('<div id="lightboxOverlay" tabindex="-1" class="lightboxOverlay"></div><div id="lightbox" tabindex="-1" class="lightbox"><div class="lb-outerContainer"><div class="lb-container"><img class="lb-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt=""/><div class="lb-nav"><a class="lb-prev" aria-label="Previous image" href="" ></a><a class="lb-next" aria-label="Next image" href="" ></a></div><div class="lb-loader"><a class="lb-cancel"></a></div></div></div><div class="lb-dataContainer"><div class="lb-data"><div class="lb-details"><span class="lb-caption"></span><span class="lb-number"></span></div><div class="lb-closeContainer"><a class="lb-close"></a></div></div></div></div>').appendTo($('body'));
+    $('<div id="lightboxOverlay" tabindex="-1" class="lightboxOverlay"></div><div id="lightbox" tabindex="-1" class="lightbox"><div class="lb-dataContainer"><div class="lb-data"><div class="lb-details"><span class="lb-caption"></span><span class="lb-desc"></span></div><div class="lb-closeContainer"><a class="lb-close"></a></div></div></div><div class="lb-outerContainer"><div class="lb-container"><img class="lb-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt=""/><div class="lb-nav"><a class="lb-prev" aria-label="Previous image" href="" ></a><a class="lb-next" aria-label="Next image" href="" ></a></div><div class="lb-loader"><a class="lb-cancel"></a></div></div></div><a href="#" class="lb-linkText"></a></div>').appendTo($('body'));
 
     // Cache jQuery objects
     this.$lightbox       = $('#lightbox');
@@ -221,7 +221,10 @@
       self.album.push({
         alt: $link.attr('data-alt'),
         link: $link.attr('href'),
-        title: $link.attr('data-title') || $link.attr('title')
+        title: $link.attr('data-title') || $link.attr('title'),
+        desc: $link.attr('data-desc'),
+        linkText: $link.attr('data-linkText'),
+        backLink: $link.attr('data-link')
       });
     }
 
@@ -474,6 +477,40 @@
       } else {
         $caption.html(this.album[this.currentImageIndex].title);
       }
+      $caption.fadeIn('fast');
+    }
+
+    if (typeof this.album[this.currentImageIndex].desc !== 'undefined' &&
+      this.album[this.currentImageIndex].desc !== '') {
+      var $caption = this.$lightbox.find('.lb-desc');
+      if (this.options.sanitizeTitle) {
+        $caption.text(this.album[this.currentImageIndex].desc);
+      } else {
+        $caption.html(this.album[this.currentImageIndex].desc);
+      }
+      $caption.fadeIn('fast');
+    }
+
+    if (typeof this.album[this.currentImageIndex].linkText !== 'undefined' &&
+      this.album[this.currentImageIndex].linkText !== '') {
+      var $caption = this.$lightbox.find('.lb-linkText');
+      if (this.options.sanitizeTitle) {
+        $caption.text(this.album[this.currentImageIndex].linkText);
+      } else {
+        $caption.html(this.album[this.currentImageIndex].linkText);
+      }
+      $caption.fadeIn('fast');
+    }
+
+    if (typeof this.album[this.currentImageIndex].backLink !== 'undefined' &&
+      this.album[this.currentImageIndex].backLink !== '') {
+      var $caption = this.$lightbox.find('.lb-linkText');
+      $caption.attr('href', this.album[this.currentImageIndex].backLink);
+      // if (this.options.sanitizeTitle) {
+      //   $caption.text(this.album[this.currentImageIndex].linkText);
+      // } else {
+      //   $caption.html(this.album[this.currentImageIndex].linkText);
+      // }
       $caption.fadeIn('fast');
     }
 
