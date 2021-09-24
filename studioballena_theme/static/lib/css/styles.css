@@ -542,7 +542,6 @@ h1, h2, h3, h4, h5, h6, p{
 }
 
 .article-cover-img{
-  height: 48vh;
   margin-bottom: 80px;
 }
 
@@ -572,7 +571,6 @@ h1, h2, h3, h4, h5, h6, p{
 }
 
 .article-img{
-  height: 45vh;
   margin-bottom: 80px;
 }
 
@@ -774,8 +772,29 @@ label {
   width: 45%;
 }
 
+.video-review{
+  height: 45vh;
+}
+
 .video-review-text{
   width: 80%;
+}
+
+#play {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    padding: 52px 38px;
+    border-radius: 50%;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    line-height: 17px;
+    cursor: pointer;
 }
 
 /* ////////////////////////// Klanten-Page-End ////////////////////////// */
@@ -1055,6 +1074,7 @@ header button {
     font-size: 20px;
     line-height: 28px;
     margin-bottom: 21.5px;
+    width: 70%;
 }
 
 .food-photography-contact {
@@ -1255,6 +1275,105 @@ header button {
 
 .home-page .home-page-imgs {
     margin-bottom: 120px;
+}
+
+.contact-page {
+    margin-bottom: 120px;
+    flex-direction: column-reverse;
+}
+
+.submit-button-wrapper{
+  width: fit-content;
+    margin: 0 auto;
+    margin-bottom: 32px;
+}
+
+.article-title-wrapper {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 40px;
+}
+
+.article-tag {
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.article-title {
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 40px;
+}
+
+.article-date-read-time {
+    font-size: 12px;
+}
+
+.article-content {
+    width: 100%;
+    min-width: unset;
+    margin-bottom: 120px !important;
+}
+
+.article-cover-img {
+    margin-bottom: 40px;
+}
+
+.article-text {
+    margin-bottom: 40px;
+}
+
+.article-img {
+    margin-bottom: 40px;
+}
+
+.article-links {
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.back-to-overview {
+    margin-top: 20px;
+}
+
+.suggested-blog-img {
+    margin-bottom: 40px;
+}
+
+.klanten-logo {
+    width: 50%;
+}
+
+.klanten-logos {
+    margin-bottom: 80px;
+}
+
+.customer-reviews-title {
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 80px;
+}
+
+.review {
+    max-width: unset;
+    margin: 0 40px;
+}
+
+.video-review-wrapper {
+    margin-bottom: 120px;
+    flex-direction: column;
+}
+
+.video-review, .video-review-text-wrapper {
+    width: 100%;
+}
+
+.video-review{
+  margin-bottom: 20px;
+}
+
+.video-review-text-wrapper {
+    text-align: center;
 }
 
 
