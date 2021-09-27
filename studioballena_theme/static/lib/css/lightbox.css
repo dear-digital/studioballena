@@ -46,7 +46,7 @@ body.lb-disable-scrolling {
   *zoom: 1;
   width: 250px;
   height: 250px;
-  height: 45vw !important;
+  height: 66vh !important;
   margin: 0 auto;
   border-radius: 4px;
 
@@ -203,7 +203,7 @@ body.lb-disable-scrolling {
 .lb-linkText {
     display: block;
     margin: 0 auto;
-    /* margin-top: 64px; */
+    margin-top: 64px;
     font-size: 14px;
     font-weight: 500;
     letter-spacing: 1px;
