@@ -263,7 +263,7 @@
       top: top + 'px',
       left: left + 'px'
     }).fadeIn(this.options.fadeDuration);
-
+    $('body').addClass('no-scroll');
     // Disable scrolling of the page while open
     if (this.options.disableScrolling) {
       $('body').addClass('lb-disable-scrolling');
@@ -581,7 +581,7 @@
     $(window).off('resize', this.sizeOverlay);
     this.$lightbox.fadeOut(this.options.fadeDuration);
     this.$overlay.fadeOut(this.options.fadeDuration);
-
+    $('body').removeClass('no-scroll');
     if (this.options.disableScrolling) {
       $('body').removeClass('lb-disable-scrolling');
     }

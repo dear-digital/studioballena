@@ -27,6 +27,8 @@ body.lb-disable-scrolling {
 .lightbox .lb-image {
   display: block;
   height: auto;
+  height: 100% !important;
+    object-fit: contain;
   max-width: inherit;
   max-height: none;
   border-radius: 3px;
@@ -44,6 +46,7 @@ body.lb-disable-scrolling {
   *zoom: 1;
   width: 250px;
   height: 250px;
+  height: 45vw !important;
   margin: 0 auto;
   border-radius: 4px;
 
@@ -56,6 +59,10 @@ body.lb-disable-scrolling {
   content: "";
   display: table;
   clear: both;
+}
+
+.lb-container {
+    height: 66vh;
 }
 
 .lb-loader {
@@ -196,7 +203,7 @@ body.lb-disable-scrolling {
 .lb-linkText {
     display: block;
     margin: 0 auto;
-    margin-top: 64px;
+    /* margin-top: 64px; */
     font-size: 14px;
     font-weight: 500;
     letter-spacing: 1px;
@@ -248,11 +255,39 @@ body.lb-disable-scrolling {
   text-transform: uppercase;
   color: #000;
   opacity: 1;
-  padding-right: 16px;
+  margin-right: 16px;
 }
 
 .lb-data .lb-close:hover {
   cursor: pointer;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
+}
+
+@media (max-width: 992px) {
+  .lb-dataContainer{
+    margin-top: 5vh;
+  }
+
+  .lb-outerContainer {
+    height: 50vh !important;
+    width: 82vw !important;
+}
+
+.lb-container {
+    height: 100%;
+}
+
+.lightbox .lb-image {
+    height: 100% !important;
+    width: 100% !important;
+}
+
+.lb-desc{
+  margin-bottom: 2%;
+}
+
+.lb-linkText{
+  margin-top: 2%;
+}
 }
