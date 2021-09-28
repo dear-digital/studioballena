@@ -126,6 +126,14 @@ h1, h2, h3, h4, h5, h6, p{
   height: 48px;
 }
 
+hr {
+    height: 1px;
+    background-color: #F0F0F5;
+    color: #F0F0F5;
+    margin: 0;
+    margin-bottom: 8px;
+}
+
 
 
 
@@ -137,13 +145,13 @@ h1, h2, h3, h4, h5, h6, p{
 }
 
 .header-right {
-    width: 60%;
-    min-width: 980px;
+    width: 80%;
+    /* min-width: 980px; */
     flex-direction: column;
 }
 
 .header-right-upper {
-    width: 50%;
+    width: 420px;
     margin-left: auto;
     line-height: var(--main-line-height);
     letter-spacing: var(--main-letter-spacing);
@@ -154,6 +162,9 @@ h1, h2, h3, h4, h5, h6, p{
     line-height: var(--main-line-height);
     letter-spacing: var(--main-letter-spacing);
     text-transform: uppercase;
+    width: 100%;
+    max-width: 800px;
+    margin-left: auto;
 }
 
 .contact-link{
@@ -707,8 +718,8 @@ label {
 }
 
 .checkbox-wrapper.selected .checkbox .checked{
-  width: 18px;
-    height: 18px;
+  width: 17px;
+    height: 17px;
     background-color: #E20714;
     display: block;
     margin-left: 2.5px;
@@ -795,6 +806,26 @@ label {
     line-height: 24px;
 }
 
+.review.slick-slide{
+  position: relative;
+}
+
+.review.slick-slide:not(.slick-current) div{
+  opacity: 40%;
+}
+
+.review.slick-slide:after {
+    content: "";
+    display: block;
+    width: 120px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -19px;
+    height: 100%;
+    left: calc( -12.5vw - 60px );
+    background: linear-gradient(to top left, rgba(0,0,0,0) 0%, rgba(0,0,0,0) calc(50% - 0.8px), rgba(0,0,0,1) 50%, rgba(0,0,0,0) calc(50% + 0.8px), rgba(0,0,0,0) 100%);
+}
+
 .video-review-wrapper{
   margin-bottom: 200px;
 }
@@ -860,7 +891,8 @@ label {
 }
 
 .project-types {
-    width: 75%;
+    /* width: 75%; */
+    max-width: 1160px;
     min-width: 780px;
     margin: 0 auto;
 }
@@ -1426,6 +1458,10 @@ header button {
 
 .video-review-text-wrapper {
     text-align: center;
+}
+
+.review.slick-slide:after{
+  background: none;
 }
 
 
